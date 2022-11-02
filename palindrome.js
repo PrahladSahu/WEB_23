@@ -1,11 +1,10 @@
-function palindrome(num){
-  let string=naman;
-  let bag ="";
-for(let i=0;i<string.length;i++){
-    bag+=string[i];
-}   return bag ;
+function palinDrome(string){
+let rev="";
+for(let i=string.length-1;i>=0;i--){
+rev += string[i];
+}
+return rev==string;
 
- if(string==reverse){
-     console.log("not a palindrome');
-}else{
-     console.log("palindrome");
+}
+let ans = palinDrome("madam");
+console.log(ans);
