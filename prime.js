@@ -1,7 +1,16 @@
-function checkprime(num){
-   for(let i=i;i<num;i--)
-{ if(num%i){
-    return true;
+function checkPrime(num){
+let count=0;
+for(let i=1;i<=num;i++){
+if(num%i==0){
+count++
 }
-}   
-   return false;
+
+}
+if(count==2){
+console.log(num,"prime")
+}else{
+console.log("Not a prime")
+}
+}
+checkPrime(17);
+
